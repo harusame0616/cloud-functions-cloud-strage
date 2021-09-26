@@ -1,0 +1,34 @@
+{
+  "name": "cloud-functions-cloud-strage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev" : "ts-node ./src/index.ts",
+    "watch:dev" : "onchange -ik -p 1000 \"./src/index.ts\" -- npm run dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harusame0616/cloud-functions-cloud-strage.git"
+  },
+  "author": "Masaharu Nemoto <nemoto.masaharu.it@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harusame0616/cloud-functions-cloud-strage/issues"
+  },
+  "homepage": "https://github.com/harusame0616/cloud-functions-cloud-strage#readme",
+  "dependencies": {
+    "@google-cloud/storage": "^5.14.3"
+  },
+  "devDependencies": {
+    "@google-cloud/functions-framework": "^1.9.0",
+    "@types/webpack-node-externals": "^2.5.2",
+    "ts-loader": "^9.2.6",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.3",
+    "webpack": "^5.54.0",
+    "webpack-cli": "^4.8.0",
+    "webpack-node-externals": "^3.0.0"
+  }
+}
